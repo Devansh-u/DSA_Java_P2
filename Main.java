@@ -19,5 +19,13 @@ public class Main {
         // tree.insert(6);
         // tree.insert(2);
         // tree.isPerfect();
+
+        // Trie trie = new Trie();
+        
+        // trie.insert("Car");
+        // trie.insert("Card");
+        // trie.insert("Care");
+        // trie.insert("Careful");
+        // trie.insert("Egg");
     }
 }

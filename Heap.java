@@ -145,4 +145,33 @@ public class Heap
 		array[b] = c;
 	}
     */
+
+
+	/* method to check if is a max heap
+	private static boolean isMaxHeap(int[] array) {
+		for (int i = 0; i<array.length/2; i++)
+			if (!isMaxHeap(i, array))
+				return false;
+		return true;
+	}
+	
+	private static boolean isMaxHeap(int index, int[] array) {
+		if (index >= array.length)
+			return true;
+		
+		int childIndex = (2 * index) + 1;
+		
+		if (childIndex<array.length && array[index]<array[childIndex])
+			return false;
+		
+		if (childIndex+1<array.length && array[childIndex+1]>array[index])
+			return false;
+		
+		boolean left = isMaxHeap(childIndex, array);
+		boolean right = isMaxHeap(childIndex+1, array);
+		
+		return left && right;
+	}
+	
+	*/
 }

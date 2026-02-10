@@ -105,4 +105,44 @@ public class Heap
     public String toString() {
         return Arrays.toString(Arrays.copyOfRange(heap,0,count));
     }
+
+    /* Heapify method implementation
+    
+    private static void heapify(int[] array) {
+		int maxIndex = array.length/2;
+		for (int i = 0; i<maxIndex; i++) {
+			heapify(i, array);
+		}
+	}
+	
+	private static void heapify(int index, int[] array) {
+		int newIndex = index;
+		int leftIndex = 2*index + 1;
+		
+		if (leftIndex < array.length && array[leftIndex] > array[newIndex])
+			newIndex = leftIndex;
+		if (leftIndex+1 < array.length && array[leftIndex+1] > array[newIndex])
+			newIndex = leftIndex+1;
+		
+		if (index == newIndex)
+			return;
+		
+		swap(index, newIndex, array);
+		
+		heapify(newIndex, array);
+		
+		int parentIndex = (index-1)/2;
+		while (index != parentIndex && array[parentIndex] < array[index]) {
+			swap(index, parentIndex, array);
+			index = parentIndex;
+			parentIndex = (index-1)/2;
+		}
+	}
+	
+	private static void swap(int a, int b, int[] array) {
+		int c = array[a];
+		array[a] = array[b];
+		array[b] = c;
+	}
+    */
 }
